@@ -53,7 +53,6 @@ class KpHandler:
                 print("Registered as id {}".format(id))
 
 if __name__ == '__main__':
-    # подключились к пространству, подписали агента на выбранный паттерн
     kp = m3_kp_api();
     subscription_triple = Triple(URI('Game'), URI(timestamp), None)
     handler = KpHandler(kp)
@@ -92,7 +91,6 @@ if __name__ == '__main__':
     kp.load_rdf_remove(Triple(URI('Game'), URI('Result' + str(id)), None))
     kp.load_rdf_remove(Triple(URI('Game'), URI('Guess' + str(id)), None))
 
-    # отключаем соединение с брокером и отправляем сигнал на завершение программы
     kp.leave()
     time.sleep(0.05)
     raise os._exit(0)
