@@ -30,7 +30,7 @@ if __name__ == '__main__':
     kp.load_rdf_remove(Triple(URI('Listener'), URI('Test'), None))
     
     random.seed(None, 2);
-    amount = 6
+    amount = 20
     while(amount > 0):
         time.sleep(0.5)
         kp.load_rdf_insert([
