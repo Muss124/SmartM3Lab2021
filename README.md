@@ -1,7 +1,7 @@
 # SmartM3Lab2021
 Knowledge management course. Lab 2. Written in Python.
 Using Smart-m3 deployed in Docker (taken from [here](https://cais.iias.spb.su/gitlab/smart-m3/smart-m3-docker)).
-You need to deploy your own instance smart-m3 and of course installed Python interpreter to be able to run tasks successfully. 
+You need to deploy your own instance of smart-m3 and of course installed Python interpreter to be able to run tasks successfully. 
 
 ## Task 1
 Testing base functions: inster/query/update/remove. Inser few RDF-triples, check insert with Query with different patterns, Update existing triples, delete triples using Remove.
