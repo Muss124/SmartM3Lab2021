@@ -23,7 +23,6 @@ class KpHandler:
         print("*******************")
 
 if __name__ == '__main__':
-    # подключились к пространству, подписали агента на выбранный паттерн
     kp = m3_kp_api();
     subscription_triple = Triple(URI('Listener'), URI('Number'), None)
     handler = KpHandler(kp)
@@ -32,12 +31,8 @@ if __name__ == '__main__':
     while(True):
         time.sleep(0.005)
         
-    
-
-    # отписываем агента
     kp.load_unsubscribe(handler_subscription)
-
-    # отключаем соединение с брокером и отправляем сигнал на завершение программы
+    
     kp.leave()
     time.sleep(0.05)
     raise os._exit(0)
