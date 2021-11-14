@@ -9,7 +9,7 @@ Testing base functions: inster/query/update/remove. Inser few RDF-triples, check
 ### Lauching 
 In folder with Task1.py file open command line and run next line: 
 ```
-python Task1.py
+python .\Task1.py
 ```
 
 ## Task 2
@@ -18,11 +18,11 @@ Subscriptions. Create agent that periodicaly insert triple in format [URI('Agent
 ### Lauching 
 Require to run a few programs simultaneously. For this you can open two command lines. Next you need to open folder with Task2Generator.py and Task2Generator.py files. First you need to run this line:
 ```
-python Task2Listener.py
+python .\Task2Listener.py
 ```
 Then in second command line run this line:
 ```
-python Task2Generator.py
+python .\Task2Generator.py
 ```
 
 ## Task 3
@@ -32,10 +32,10 @@ Guessing number game. Create two agents: server and player. Player trying to gue
 This task also require to run a few programs simultaneously. You whould need to run game program and then run any amount of player instances. 
 First you need to open folder with Task3Game.py and Task3Player.py files. Open command lines. First you need to run this line:
 ```
-python Task3Game.py
+python .\Task3Game.py
 ```
 Then in second and any other command lines run this line to add players:
 ```
-python Task3Player.py
+python .\Task3Player.py
 ```
 
