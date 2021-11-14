@@ -16,13 +16,11 @@ class KpHandler:
         print("*******************")
 
 if __name__ == '__main__':
-    # подключились к пространству, подписали агента на выбранный паттерн
     kp = m3_kp_api();
     subscription_triple = Triple(URI('Listener'), None, None)
     handler = KpHandler(kp)
     handler_subscription = kp.load_subscribe_RDF(subscription_triple, handler)
 
-    # тестируем подписку
     kp.load_rdf_insert([
             Triple(URI('Listener'), URI('Test'), Literal(123)),
             Triple(URI('Listener'), URI('Test'), Literal(321)),
@@ -41,12 +39,10 @@ if __name__ == '__main__':
         amount-=1
     
     
-    # отписываем агента и полностью очищаем записанные данные
     time.sleep(0.05)
     kp.load_unsubscribe(handler_subscription)
     kp.clean_sib()
-
-    # отключаем соединение с брокером и отправляем сигнал на завершение программы
+    
     kp.leave()
     time.sleep(0.05)
     raise os._exit(0)
