@@ -35,9 +35,6 @@ class KpHandler:
         
         if len(added) > 0:
             if str(added[0][1])[:5] == 'Guess':
-                print("*******************")
-                print("Added ", added)
-                print("*******************")
                 
                 current = int(str(added[0][1])[5:])
                 value = int(str(added[0][2]))
@@ -75,8 +72,6 @@ if __name__ == '__main__':
 
     while(True):
         time.sleep(0.005)
-        
-    print("Game over")
 
     kp.load_unsubscribe(handler_subscription)
 
