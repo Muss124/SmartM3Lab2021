@@ -6,9 +6,6 @@ from datetime import datetime
 from smart_m3.m3_kp_api import *
 
 random.seed(None, 2)
-global game
-game = True
-
 global curId
 curId = 0;
 global data
@@ -21,7 +18,6 @@ class KpHandler:
     def handle(self, added, removed):
 
 
-        global game
         global data
         global curId
         
